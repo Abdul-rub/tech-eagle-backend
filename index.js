@@ -18,6 +18,10 @@ app.use('/customer', customerRoutes);
 app.use('/manager', managerRoutes);
 
 
+app.get('/', (req,res)=>{
+  res.send("Welcome to Teach Eagle Assignment")
+})
+
 
   //MONGO URL
   MONGO_URL = "mongodb+srv://abdul:H0OzEcGYi0RRpHbV@cluster0.0pfjeqa.mongodb.net/techEagleAssignment?retryWrites=true&w=majority"
